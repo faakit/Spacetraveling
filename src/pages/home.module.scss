@@ -1,1 +1,76 @@
-// TODO
+.posts {
+    
+    a {
+        display: block;
+        & + a {
+            padding-top: 3rem;
+        }
+
+        strong {
+            color: var(--heading);
+            font-size: 1.75rem;
+            font-weight: bold;
+            line-height: 2.125rem;
+            text-align: justify;
+            letter-spacing: -0.5px;
+
+            transition: color 0.2s;
+        }
+
+        p {
+            padding-top: 0.5rem;
+
+            font-size: 1.125rem;
+            text-align: justify;
+        }
+
+        .postInfos {
+            display: flex;
+        }
+
+        .postInfo {
+            padding-top: 1.5rem;
+
+            display: flex;
+            align-items: center;
+
+            time,
+            span {
+                padding-left: 0.5rem;
+                color: var(--info);
+                font-size: 0.875rem;
+                line-height: 1rem;
+            }
+
+            & + .postInfo {
+                padding-left: 1.5rem;
+            }
+        }
+
+        &:hover strong {
+            color: var(--highlight);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.seeMore {
+    margin-top: 4rem;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+
+    color:var(--highlight);
+
+    background: none;
+    border: none;
+
+    transition: 0.2s;
+    &:hover {
+        color: black;
+    }
+}
